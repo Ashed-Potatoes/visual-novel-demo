@@ -1,0 +1,110 @@
+[
+    {
+        "parentChapterId":1,
+        "subChapterId":0,
+        "ending":null,
+        "dialogue":[
+            {
+                "dialogueId":1,
+                "characterName":"Aaric",
+                "characterPortrait":"link-to-path-here",
+                "text":"Oh my, a beggar on the road! How quaint!",
+                "event":null,
+                "choices":[
+                    {
+                        "choiceName":"Continue",
+                        "requiredItem":null,
+                        "destination":"chapterOne/subChapterZero/dialogueTwo"
+                    }
+                ]
+            },
+            {
+                "dialogueId":2,
+                "characterName":"Beggar",
+                "characterPortrait":"link-to-path-here",
+                "text":"Any spare coins, sir?",
+                "event":null,
+                "choices":[
+                    {
+                        "choiceName":"Give money",
+                        "requiredItem":"1g",
+                        "destination": "chapterOne/subChapterZero/dialogueThree"
+                    },
+                    {
+                        "choiceName":"Kick beggar",
+                        "requiredItem":null,
+                        "destination": "chapterOne/subChapterZero/dialogueFour"
+                    },
+                    {
+                        "choiceName":"Leave",
+                        "requiredItem":null,
+                        "destination":"chapterOne/subChapterZero/dialogueFive"
+                    }
+                ]
+            },
+            {
+                "dialogueId":3,
+                "characterName":"Beggar",
+                "characterPortrait":"happyBeggar.jpg",
+                "text":"Oh thank you so much, kind sir! May the Gods smile down on you!",
+                "event":"Lose 1g",
+                "choices":[
+                    {
+                        "choiceName":"Continue",
+                        "requiredItem":null,
+                        "destination":"chapterOne/subChapterOne/dialogueZero"
+                    }
+                ]
+            },
+            {
+                "dialogueId":4,
+                "characterName":"Beggar",
+                "characterPortrait":"sadBeggar.jpg",
+                "text":"Ow! Curse you!",
+                "event":"Angry Beggar",
+                "choices":[
+                    {
+                        "choiceName":"Continue",
+                        "requiredItem":null,
+                        "destination":"chapterOne/subChapterOne/dialogueZero"
+                    }
+                ]
+            },
+            {
+                "dialogueId":5,
+                "characterName":null,
+                "characterPortrait":null,
+                "text":"You ignore the beggar, continuing your walk",
+                "event":null,
+                "choices":[
+                    {
+                        "choiceName":"Continue",
+                        "requiredItem":null,
+                        "destination":"chapterOne/subChapterOne/dialogueZero"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "parentChapterId":1,
+        "subChapterId":1,
+        "ending":null,
+        "dialogue":[
+            {
+                "dialogueId":1,
+                "characterName":null,
+                "characterPortrait":null,
+                "text":"Aaric continues walking down the road, towards Citytown",
+                "event":null,
+                "choices":{
+                    "continue":{
+                        "choiceName":"Continue",
+                        "requiredItem":null,
+                        "destination":"chapterOne/subChapterOne/dialogueTwo"
+                    }
+                }
+            }
+        ]
+    }
+]
